@@ -1,0 +1,18 @@
+.cursor{
+    cursor: pointer;
+    color: white;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
+
+.navbarBarra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarTexto {
+    display: flex;
+    justify-content: space-around;
+}
