@@ -16,3 +16,7 @@
     display: flex;
     justify-content: space-around;
 }
+
+.text-decorator-none {
+    text-decoration: none;
+}
