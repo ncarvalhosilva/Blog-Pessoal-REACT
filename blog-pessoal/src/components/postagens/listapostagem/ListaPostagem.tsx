@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Postagem from '../../../models/Postagem';
 import { busca } from '../../../services/Services';
 import { Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
-import {Box} from '@mui/material'
+import { Box } from '@mui/material'
 import './ListaPostagem.css';
 import useLocalStorage from 'react-use-localstorage';
 import { useNavigate } from 'react-router-dom'
@@ -51,6 +51,9 @@ function ListaPostagem() {
                 </Typography>
                 <Typography variant="body2" component="p">
                   {post.texto}
+                </Typography>
+                <Typography variant="body2" component="p">
+                  Postagem feita em: {new Date(Date.parse(post.data)).toLocaleString('pt-br')}
                 </Typography>
                 <Typography variant="body2" component="p">
                   {post.tema?.descricao}
